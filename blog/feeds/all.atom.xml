@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (NFU-MDE104B-40423226)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-01T11:00:00+08:00</updated><entry><title>20170301 Week 2</title><link href="./Week%202.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>2017springcd_bg1</name></author><id>tag:,2017-03-01:./Week 2.html</id><summary type="html">&lt;h3&gt;分組座位原始碼&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (2017 springcd_bg8)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-01T11:00:00+08:00</updated><entry><title>20170301第二週</title><link href="./Week%202.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-01:./Week 2.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
+&lt;p&gt;利用Solvespace 畫出簡單的四連桿機構, 觀察該機構的運動方式&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/208319717" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/208319717"&gt;2017-03-14 20-20-00&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;分組座位原始碼&lt;/h3&gt;
 
 &lt;pre class="brush: python"&gt;
 #import os
@@ -46,20 +53,13 @@ print("學生總數:", n)
 #print(os.environ)
 &lt;/pre&gt;
 
-&lt;h3&gt;Fourbar&lt;/h3&gt;
+&lt;p&gt;心得:協同真的很棒，小組成員各個同心協力完成作業，真的很棒&lt;/p&gt;</summary><category term="brython"></category><category term="w2"></category></entry><entry><title>20170308第三週</title><link href="./Week%203.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-01:./Week 3.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
+&lt;p&gt;利用Onshape畫出簡單的四連桿機構, 觀察該機構的運動方式&lt;/p&gt;
 
-&lt;p&gt;利用Solvespace 畫出簡單的四連桿機構, 觀察該機構的運動方式, 也可以匯出到V-rep 進行動態模擬&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/208420652" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe src="https://player.vimeo.com/video/206177676" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/206177676"&gt;Week 2_Fourbar&lt;/a&gt; from &lt;a href="https://vimeo.com/user46807821"&gt;NFU-MDE104B-40423226&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;心得&lt;/h3&gt;
-
-&lt;p&gt;雖然程式能做的人也可以做, 但人會出錯, 簡單卻繁瑣的工作就交給程式, 困難的再讓人類來做就行了&lt;/p&gt;</summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170308 Week3</title><link href="./Week%203.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-01:./Week 3.html</id><summary type="html"></summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170222 Week 1</title><link href="./Week%201.html" rel="alternate"></link><published>2017-02-22T11:00:00+08:00</published><updated>2017-02-22T11:00:00+08:00</updated><author><name>40423226</name></author><id>tag:,2017-02-22:./Week 1.html</id><summary type="html">&lt;h3&gt;修改stunnel.conf的IP設定&lt;/h3&gt;
-
-&lt;iframe src="https://player.vimeo.com/video/205645881" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/205645881"&gt;Week 1_Set IP&lt;/a&gt; from &lt;a href="https://vimeo.com/user46807821"&gt;NFU-MDE104B-40423226&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;心得: 還好還沒忘記, 複習一下ipconfig /all指令&lt;/p&gt;</summary><category term="stunnel"></category></entry></feed>
+&lt;p&gt;&lt;a href="https://vimeo.com/208420652"&gt;2017-03-15_10-12-37&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="brython"></category><category term="w3"></category></entry><entry><title>20170315第四週</title><link href="./Week%204.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-01:./Week 4.html</id><summary type="html">&lt;p&gt;w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
+w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
+W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連桿。轉動連桿確認作動是否會干涉 2.在繪製出零件並俟連桿機構做組合。&lt;/p&gt;</summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170222第一週</title><link href="./Week%201.html" rel="alternate"></link><published>2017-02-22T11:00:00+08:00</published><updated>2017-02-22T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-02-22:./Week 1.html</id><summary type="html">&lt;h1&gt;修改stunnel.conf的IP設定&lt;/h1&gt;
+&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/208411032" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/208411032"&gt;2017-03-15_08-32-15&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="brython"></category><category term="w1"></category></entry></feed>
