@@ -20,7 +20,7 @@
 &lt;p&gt;第7位組員(40423247)負責 Length=20 的四連桿分析。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="../data/7.PNG" width="800" /&gt;&lt;/p&gt;
-&lt;p&gt;第8位組員(40423250)負責 Length=15 的四連桿分析。&lt;/p&gt;
+&lt;p&gt;第8位組員(40423249)負責 Length=15 的四連桿分析。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="../data/8.PNG" width="800" /&gt;&lt;/p&gt;</summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170315第四週</title><link href="./Week%204.html" rel="alternate"></link><published>2017-03-15T11:00:00+08:00</published><updated>2017-03-15T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-15:./Week 4.html</id><summary type="html">&lt;p&gt;w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
 w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
