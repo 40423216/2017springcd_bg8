@@ -76,6 +76,7 @@
 <v t="leo.20170315114826.1"><vh>@edit 20170301.md</vh></v>
 <v t="leo.20170315114832.1"><vh>@edit 20170308.md</vh></v>
 <v t="leo.20170304120513.1"><vh>@edit 20170315.md</vh></v>
+<v t="leo.20170419101021.1"><vh>@edit 20170419.md</vh></v>
 <v t="yen.20170108171733.81" a="E"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
