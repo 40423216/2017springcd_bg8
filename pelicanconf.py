@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'KMOL'
-SITENAME = '2017Spring 協同產品設計實習 (2017 springcd_bg8)'
+AUTHOR = '2017springcd_bg1'
+SITENAME = '2017springcd_bg1 (虎尾科大MDE)'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
@@ -23,7 +23,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Home', 'https://40423216.github.io/2017springcd_hw/blog/'),('Pelican', 'http://getpelican.com/'),
+LINKS = (('Pelican', 'http://getpelican.com/'),
          ('pelican-bootstrap3', 'https://github.com/DandyDev/pelican-bootstrap3/'),
          ('pelican-plugins', 'https://github.com/getpelican/pelican-plugins'),
          ('Tipue search', 'https://github.com/Tipue/Tipue-Search'),)
@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = 10
 
 # 必須絕對目錄或相對於設定檔案所在目錄
 PLUGIN_PATHS = ['plugin']
-PLUGINS = ['liquid_tags.notebook', 'summary', 'tipue_search', 'sitemap']
+PLUGINS = [ 'summary', 'tipue_search', 'sitemap']
 
 # for sitemap plugin
 SITEMAP = {
