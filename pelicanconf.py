@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = '2017springcd_bg1'
-SITENAME = '2017springcd_bg1 (虎尾科大MDE)'
+AUTHOR = '2017springcd_bg8'
+SITENAME = '2017springcd_bg8 (虎尾科大MDE)'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
 
