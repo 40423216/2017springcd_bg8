@@ -1,5 +1,547 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (2017 springcd_bg8)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-03-01T11:00:00+08:00</updated><entry><title>20170301第二週</title><link href="./Week%202.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-01:./Week 2.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (2017 springcd_bg8)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-19T11:00:00+08:00</updated><entry><title>20170419第九週</title><link href="./Week%209.html" rel="alternate"></link><published>2017-04-19T11:00:00+08:00</published><updated>2017-04-19T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-04-19:./Week 9.html</id><summary type="html">&lt;h3&gt;四連桿機構協同 Trace Point 查驗&lt;/h3&gt;
+
+&lt;p&gt;參考的網際程式如下:&lt;/p&gt;
+
+&lt;pre class="brush: python"&gt;
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+ &lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423214" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423214"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423214/data/midterm1.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+&lt;/pre&gt;
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;h3&gt;40423216: &lt;button onClick="lity('./../40423206/data/midterm2.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423216" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423216"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423216/data/midterm2.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423207: &lt;button onClick="lity('./../40423207/data/midterm3.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423207" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423207"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423207/data/midterm3.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423219: &lt;button onClick="lity('./../40423219/data/midterm4.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423219" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423219"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423219/data/midterm4.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423226: &lt;button onClick="lity('./../40423226/data/midterm5.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423226" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423226"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423226/data/midterm5.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423229: &lt;button onClick="lity('./../40423229/data/midterm6.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+
+&lt;p&gt;&lt;canvas id="fourbar_40423229" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423229"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423229/data/midterm6.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423241: &lt;button onClick="lity('./../40423241/data/midterm7.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+
+&lt;p&gt;&lt;canvas id="fourbar_40423241" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423241"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423241/data/midterm7.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423243: &lt;button onClick="lity('./../40423243/data/midterm8.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423243" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423243"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423243/data/midterm8.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;影片&lt;/h3&gt;
+
+&lt;p&gt;四連桿機構協同 Trace Point 查驗&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/214771841" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;四連桿四足行走機構&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/214771980" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="期中測驗"></category></entry><entry><title>20170412第八週</title><link href="./Week%208.html" rel="alternate"></link><published>2017-04-12T11:00:00+08:00</published><updated>2017-04-12T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-04-12:./Week 8.html</id><summary type="html">&lt;h3&gt;自評&lt;/h3&gt;
+
+&lt;p&gt;小組互評: &lt;a href="https://pygroup-ag100.rhcloud.com"&gt;https://pygroup-ag100.rhcloud.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;個人自評: &lt;a href="http://mde1a2.kmol.info:8000/k96tgzh1ofbl"&gt;http://mde1a2.kmol.info:8000/k96tgzh1ofbl&lt;/a&gt;&lt;/p&gt;</summary><category term="自評"></category></entry><entry><title>20170405第七週</title><link href="./Week%207.html" rel="alternate"></link><published>2017-04-05T11:00:00+08:00</published><updated>2017-04-05T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-04-05:./Week 7.html</id><summary type="html">&lt;h3&gt;Fossil 推送檔案和V-rep模擬八連桿機構&lt;/h3&gt;
+
+&lt;h3&gt;Fossil 推送檔案&lt;/h3&gt;
+
+&lt;pre&gt;
+mkdir wd
+cd wd&lt;/pre&gt;
+
+&lt;pre&gt;
+mkdir w7
+cd w7&lt;/pre&gt;
+
+&lt;pre&gt;fossil open ./../../bg8.fossil&lt;/pre&gt;
+
+&lt;pre&gt;
+fossil add .
+fossil remote-url off
+fossil commit -m "提交的註解"
+fossil push https://user@10.0.0.130 &lt;/pre&gt;
+
+&lt;h3&gt;Solvespace&lt;/h3&gt;
+
+&lt;p&gt;組合&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-1.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;bracket_lower&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-2.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_15&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-3.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_39.3&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-4.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_39.4&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-5.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_50&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-6.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_62&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-7.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;link_fixed&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-8.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Pin_10&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-9.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Pin_15&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-10.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;triangle_upper&lt;/p&gt;
+
+&lt;iframe src="../data/image/W7-11.html" width="800" height="480"&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;影片&lt;/h3&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/214529063" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="Fossil 推送檔案和Solvespace完成八連桿機構跟用V-rep模擬"></category></entry><entry><title>20170329第六週</title><link href="./Week%206.html" rel="alternate"></link><published>2017-03-29T11:00:00+08:00</published><updated>2017-03-29T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-29:./Week 6.html</id><summary type="html">&lt;h3&gt;V-rep 模擬 Onebar&lt;/h3&gt;
+
+&lt;h3&gt;影片&lt;/h3&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/214401019" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="V-rep 模擬 Oneba"></category></entry><entry><title>20170322第五週</title><link href="./Week%205.html" rel="alternate"></link><published>2017-03-22T11:00:00+08:00</published><updated>2017-03-22T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-22:./Week 5.html</id><summary type="html">&lt;h3&gt;Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar&lt;/h3&gt;
+
+&lt;h3&gt;Fossil SCM 與 Stunnel 啟動整合&lt;/h3&gt;
+
+&lt;p&gt;1. 更改 Start.bat 設定&lt;/p&gt;
+
+&lt;pre class="brush: python"&gt;
+REM tiny2017 主要針對初學 Python3 與 C 學員所建立
+REM 近端使用 fossil 管理資料版本, 並且定時轉為 git 格式後上傳到 github
+@echo off
+REM 設定 y 硬碟代號與 data 目錄對應
+set Disk=y
+subst %Disk%: "data"
+REM 設定 leo 相關對應 Home 位置
+set HomePath=%Disk%:\home
+set HomeDrive=%Disk%:\home
+set Home=%Disk%:\home
+REM 將系統 Python 程式的 io 設為 utf-8
+set PYTHONIOENCODING="utf-8"
+REM 將後續的指令執行, 以 %Disk% 為主
+%Disk%:
+REM 設定 PYTHONPATH
+set PYTHONPATH=%Disk%:\python-3.5.3-embed-amd64
+REM 設定 Leo 所用的編輯器
+set LEO_EDITOR=%Disk%:\wscite\SciTE.exe
+REM for fossil https 連線設定
+set HTTPS=on
+REM 指令搜尋路徑設定
+set path1=%PATH%;%Disk%:;%Disk%:\python-3.5.3-embed-amd64;%Disk%:\git\bin;%Disk%:\stunnel\bin;%Disk%:\sqlite-tools;%Disk%:\python-3.5.3-embed-amd64\Scripts;%Disk%:\portablegit\bin;
+set path2=c:\Windows\Microsoft.NET\Framework\v3.5;%Disk%:\python-3.5.3-embed-amd64\Lib\site-packages;
+set path3="C:\Program Files (x86)\Google\Chrome\Application"
+path=%path%;%path1%;%path2%;%path3%
+start /MIN %Disk%:\wscite\SciTE.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+start /MIN cmd.exe
+REM 啟動 Leo 編輯器
+REM %Disk%:\Miniconda3\python.exe %Disk%:\apps\launchLeo.py
+REM 啟動 stunnel
+start /MIN fossil.exe server -P 127.0.0.1:8080 %Disk%:\tmp\fossil_repo\2017springcd_bg1.fossil
+REM 取得電腦 IP, 然後設定 %Disk%:/stunnel/config/stunnel.conf
+for /f "delims=[] tokens=2" %%a in ('ping -4 -n 1 %ComputerName% ^| findstr [') do set NetworkIP=%%a
+REM echo Network IP: %NetworkIP%
+REM Saved in %Disk%:\stunnel\config\stunnel.conf
+@echo off
+REM 建立 stunnel.conf
+@echo [https] &gt; %Disk%:\stunnel\config\stunnel.conf
+REM 附加資料
+@echo accept = %NetworkIP%:443 &gt;&gt; %Disk%:\stunnel\config\stunnel.conf
+@echo connect = 127.0.0.1:8080 &gt;&gt; %Disk%:\stunnel\config\stunnel.conf
+@echo TIMEOUTclose = 0 &gt;&gt; %Disk%:\stunnel\config\stunnel.conf
+@echo cert = %Disk%:\stunnel\config\localhost.crt &gt;&gt; %Disk%:\stunnel\config\stunnel.conf
+@echo key = %Disk%:\stunnel\config\localhost.key &gt;&gt; %Disk%:\stunnel\config\stunnel.conf
+REM 啟動 stunnel
+start /MIN stunnel.exe
+REM 以 chrome 連線到 https://%NetworkIP%:443
+chrome https://%NetworkIP% https://mde2a2.kmol.info/cdbg8
+Exit
+&lt;/pre&gt;
+
+&lt;h3&gt;如何在fossil筆記倉儲主頁顯示作業&lt;/h3&gt;
+
+&lt;p&gt;只要在wiki裡新增一個與倉儲筆記同名稱的檔案，即可在fossil筆記倉儲主頁顯示作業&lt;/p&gt;
+
+&lt;h3&gt;影片&lt;/h3&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/214395459" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar"></category></entry><entry><title>20170315第四週</title><link href="./Week%204.html" rel="alternate"></link><published>2017-03-15T11:00:00+08:00</published><updated>2017-03-15T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-15:./Week 4.html</id><summary type="html">&lt;p&gt;w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
+w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
+W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連桿。轉動連桿確認作動是否會干涉 2.在繪製出零件並俟連桿機構做組合。&lt;/p&gt;</summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170308第三週</title><link href="./Week%203.html" rel="alternate"></link><published>2017-03-08T11:00:00+08:00</published><updated>2017-03-08T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-08:./Week 3.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
+&lt;p&gt;利用Onshape畫出簡單的四連桿機構, 觀察該機構的運動方式&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/208420652" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/208420652"&gt;2017-03-15_10-12-37&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="brython"></category><category term="w3"></category></entry><entry><title>20170301第二週</title><link href="./Week%202.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-01:./Week 2.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
 &lt;p&gt;利用Solvespace 畫出簡單的四連桿機構, 觀察該機構的運動方式&lt;/p&gt;
 
 &lt;iframe src="https://player.vimeo.com/video/208319717" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -53,13 +595,6 @@ print("學生總數:", n)
 #print(os.environ)
 &lt;/pre&gt;
 
-&lt;p&gt;心得:協同真的很棒，小組成員各個同心協力完成作業，真的很棒&lt;/p&gt;</summary><category term="brython"></category><category term="w2"></category></entry><entry><title>20170308第三週</title><link href="./Week%203.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-03-01:./Week 3.html</id><summary type="html">&lt;h1&gt;Fourbar&lt;/h1&gt;
-&lt;p&gt;利用Onshape畫出簡單的四連桿機構, 觀察該機構的運動方式&lt;/p&gt;
-
-&lt;iframe src="https://player.vimeo.com/video/208420652" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://vimeo.com/208420652"&gt;2017-03-15_10-12-37&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="brython"></category><category term="w3"></category></entry><entry><title>20170315第四週</title><link href="./Week%204.html" rel="alternate"></link><published>2017-03-01T11:00:00+08:00</published><updated>2017-03-01T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-03-01:./Week 4.html</id><summary type="html">&lt;p&gt;w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
-w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
-W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連桿。轉動連桿確認作動是否會干涉 2.在繪製出零件並俟連桿機構做組合。&lt;/p&gt;</summary><category term="python"></category><category term="solvespace"></category></entry><entry><title>20170222第一週</title><link href="./Week%201.html" rel="alternate"></link><published>2017-02-22T11:00:00+08:00</published><updated>2017-02-22T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-02-22:./Week 1.html</id><summary type="html">&lt;h1&gt;修改stunnel.conf的IP設定&lt;/h1&gt;
+&lt;p&gt;心得:協同真的很棒，小組成員各個同心協力完成作業，真的很棒&lt;/p&gt;</summary><category term="brython"></category><category term="w2"></category></entry><entry><title>20170222第一週</title><link href="./Week%201.html" rel="alternate"></link><published>2017-02-22T11:00:00+08:00</published><updated>2017-02-22T11:00:00+08:00</updated><author><name>40423216</name></author><id>tag:,2017-02-22:./Week 1.html</id><summary type="html">&lt;h1&gt;修改stunnel.conf的IP設定&lt;/h1&gt;
 &lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/208411032" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;a href="https://vimeo.com/208411032"&gt;2017-03-15_08-32-15&lt;/a&gt; from &lt;a href="https://vimeo.com/user47853073"&gt;李彥錞&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="brython"></category><category term="w1"></category></entry></feed>

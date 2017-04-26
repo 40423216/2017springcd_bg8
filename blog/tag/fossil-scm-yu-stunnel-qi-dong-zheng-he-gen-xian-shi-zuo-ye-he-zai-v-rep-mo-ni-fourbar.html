@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>20170322第五週 - 2017Spring 協同產品設計實習 (2017 springcd_bg8)</title>
+    <title>Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar - 2017Spring 協同產品設計實習 (2017 springcd_bg8)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,32 +166,27 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./Week 5.html">
 
-        <meta name="author" content="2017springcd_bg8" />
-        <meta name="keywords" content="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar" />
-        <meta name="description" content="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar Fossil SCM 與 Stunnel 啟動整合 1. 更改 Start.bat 設定 REM tiny2017 主要針對初學 Python3 與 C 學員所建立 REM 近端使用 fossil 管理資料版本, 並且定時轉為 git 格式後上傳到 github @echo off REM 設定 y 硬碟代號與 data 目錄對應 set Disk=y subst %Disk%: &#34;data&#34; REM 設定 leo ..." />
+    <meta name="author" content="KMOL" />
+    <meta name="keywords" content="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar" />
 
+    <!-- Open Graph tags -->
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (2017 springcd_bg8)" />
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content="20170322第五週"/>
-        <meta property="og:url" content="./Week 5.html"/>
-        <meta property="og:description" content="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar Fossil SCM 與 Stunnel 啟動整合 1. 更改 Start.bat 設定 REM tiny2017 主要針對初學 Python3 與 C 學員所建立 REM 近端使用 fossil 管理資料版本, 並且定時轉為 git 格式後上傳到 github @echo off REM 設定 y 硬碟代號與 data 目錄對應 set Disk=y subst %Disk%: &#34;data&#34; REM 設定 leo ..."/>
-        <meta property="article:published_time" content="2017-03-22" />
-            <meta property="article:section" content="Course" />
-            <meta property="article:tag" content="Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar" />
-            <meta property="article:author" content="2017springcd_bg8" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="2017Spring 協同產品設計實習 (2017 springcd_bg8)"/>
+        <meta property="og:url" content=".."/>
+        <meta property="og:description" content="2017Spring 協同產品設計實習 (2017 springcd_bg8)"/>
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="./theme/css/bootstrap.united.min.css" type="text/css"/>
-    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
-    <link href="./theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
 
-        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="2017Spring 協同產品設計實習 (2017 springcd_bg8) ATOM Feed"/>
 
 <script type="text/javascript" src="https://coursemdetw.github.io/project_site_files/files/syntaxhighlighter/shCore.js"></script>
@@ -253,25 +248,25 @@ init_mathjax();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="./" class="navbar-brand">
+            <a href="../" class="navbar-brand">
 2017Spring 協同產品設計實習 (2017 springcd_bg8)            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                         <li><a href="./pages/about/">
+                         <li><a href="../pages/about/">
                              About
                           </a></li>
-                        <li class="active">
-                            <a href="./category/course.html">Course</a>
+                        <li >
+                            <a href="../category/course.html">Course</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><span>
-                <form class="navbar-search" action="./search.html">
+                <form class="navbar-search" action="../search.html">
                   <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
                 </form></span>
               </li>
-              <li><a href="./archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -283,36 +278,9 @@ init_mathjax();
     <div class="row">
         <div class="col-sm-9">
 
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="./Week 5.html"
-                       rel="bookmark"
-                       title="Permalink to 20170322第五週">
-                        20170322第五週
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2017-03-22T11:00:00+08:00"> Wed 22 March 2017</time>
-    </span>
-            <span class="label label-default">By</span>
-            <a href="./author/2017springcd_bg8.html"><i class="fa fa-user"></i> 2017springcd_bg8</a>
-
-
-
-<span class="label label-default">Tags</span>
-	<a href="./tag/fossil-scm-yu-stunnel-qi-dong-zheng-he-gen-xian-shi-zuo-ye-he-zai-v-rep-mo-ni-fourbar.html">Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                </div>
-                <h3>Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar</h3>
+            <article>
+                <h2><a href="../Week 5.html">20170322第五週</a></h2>
+                <div class="summary"><h3>Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar</h3>
 
 <h3>Fossil SCM 與 Stunnel 啟動整合</h3>
 
@@ -325,64 +293,11 @@ REM 近端使用 fossil 管理資料版本, 並且定時轉為 git 格式後上�
 REM 設定 y 硬碟代號與 data 目錄對應
 set Disk=y
 subst %Disk%: "data"
-REM 設定 leo 相關對應 Home 位置
-set HomePath=%Disk%:\home
-set HomeDrive=%Disk%:\home
-set Home=%Disk%:\home
-REM 將系統 Python 程式的 io 設為 utf-8
-set PYTHONIOENCODING="utf-8"
-REM 將後續的指令執行, 以 %Disk% 為主
-%Disk%:
-REM 設定 PYTHONPATH
-set PYTHONPATH=%Disk%:\python-3.5.3-embed-amd64
-REM 設定 Leo 所用的編輯器
-set LEO_EDITOR=%Disk%:\wscite\SciTE.exe
-REM for fossil https 連線設定
-set HTTPS=on
-REM 指令搜尋路徑設定
-set path1=%PATH%;%Disk%:;%Disk%:\python-3.5.3-embed-amd64;%Disk%:\git\bin;%Disk%:\stunnel\bin;%Disk%:\sqlite-tools;%Disk%:\python-3.5.3-embed-amd64\Scripts;%Disk%:\portablegit\bin;
-set path2=c:\Windows\Microsoft.NET\Framework\v3.5;%Disk%:\python-3.5.3-embed-amd64\Lib\site-packages;
-set path3="C:\Program Files (x86)\Google\Chrome\Application"
-path=%path%;%path1%;%path2%;%path3%
-start /MIN %Disk%:\wscite\SciTE.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-REM 啟動 Leo 編輯器
-REM %Disk%:\Miniconda3\python.exe %Disk%:\apps\launchLeo.py
-REM 啟動 stunnel
-start /MIN fossil.exe server -P 127.0.0.1:8080 %Disk%:\tmp\fossil_repo\2017springcd_bg1.fossil
-REM 取得電腦 IP, 然後設定 %Disk%:/stunnel/config/stunnel.conf
-for /f "delims=[] tokens=2" %%a in ('ping -4 -n 1 %ComputerName% ^| findstr [') do set NetworkIP=%%a
-REM echo Network IP: %NetworkIP%
-REM Saved in %Disk%:\stunnel\config\stunnel.conf
-@echo off
-REM 建立 stunnel.conf
-@echo [https] > %Disk%:\stunnel\config\stunnel.conf
-REM 附加資料
-@echo accept = %NetworkIP%:443 >> %Disk%:\stunnel\config\stunnel.conf
-@echo connect = 127.0.0.1:8080 >> %Disk%:\stunnel\config\stunnel.conf
-@echo TIMEOUTclose = 0 >> %Disk%:\stunnel\config\stunnel.conf
-@echo cert = %Disk%:\stunnel\config\localhost.crt >> %Disk%:\stunnel\config\stunnel.conf
-@echo key = %Disk%:\stunnel\config\localhost.key >> %Disk%:\stunnel\config\stunnel.conf
-REM 啟動 stunnel
-start /MIN stunnel.exe
-REM 以 chrome 連線到 https://%NetworkIP%:443
-chrome https://%NetworkIP% https://mde2a2.kmol.info/cdbg8
-Exit
-</pre>
-
-<h3>如何在fossil筆記倉儲主頁顯示作業</h3>
-
-<p>只要在wiki裡新增一個與倉儲筆記同名稱的檔案，即可在fossil筆記倉儲主頁顯示作業</p>
-
-<h3>影片</h3>
-
-<iframe src="https://player.vimeo.com/video/214395459" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
+REM 設定 leo ...</pre>
+                    <a class="btn btn-default btn-xs" href="../Week 5.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -394,44 +309,24 @@ Exit
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="./Week 9.html">
-                            20170419第九週
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Week 8.html">
-                            20170412第八週
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Week 7.html">
-                            20170405第七週
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Week 6.html">
-                            20170329第六週
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./Week 5.html">
+                        <a href="../Week 5.html">
                             20170322第五週
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="list-group-item"><a href="./categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+            <li class="list-group-item"><a href="../categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
                 <ul class="list-group" id="categories">
                     <li class="list-group-item">
-                        <a href="./category/course.html">
+                        <a href="../category/course.html">
                             <i class="fa fa-folder-open fa-lg"></i> Course
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="list-group-item"><a href="./tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group list-inline tagcloud" id="tags">
                 </ul>
             </li>
@@ -482,19 +377,19 @@ Exit
       </div>
    </div>
 </footer>
-<script src="./theme/js/jquery.min.js"></script>
+<script src="../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="./theme/js/bootstrap.min.js"></script>
+<script src="../theme/js/bootstrap.min.js"></script>
 
 <!-- for https://github.com/jsor/lity lightbox video popup -->
 
-<link href="./theme/css/lity.css" rel="stylesheet">
+<link href="../theme/css/lity.css" rel="stylesheet">
 
-<script src="./theme/js/lity.js"></script>
+<script src="../theme/js/lity.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="./theme/js/respond.min.js"></script>
+<script src="../theme/js/respond.min.js"></script>
 
 
 </body>
