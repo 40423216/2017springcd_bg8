@@ -9,7 +9,7 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="yen.20170108171605.1" a="E"><vh>@settings</vh>
+<v t="yen.20170108171605.1"><vh>@settings</vh>
 <v t="yen.20170108171605.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="yen.20170108171605.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
@@ -89,7 +89,7 @@
 </v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
-<v t="yen.20170120212350.1" a="E"><vh>programs</vh>
+<v t="yen.20170120212350.1"><vh>programs</vh>
 <v t="yen.20170210153828.1"><vh>v-rep rempte api</vh>
 <v t="yen.20170210202015.1"><vh>Python remote API</vh></v>
 <v t="yen.20170210170248.1"><vh>line tracer</vh></v>

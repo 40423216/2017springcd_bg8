@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2017Spring 協同產品設計實習 (2017 springcd_bg8)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-19T11:00:00+08:00</updated><entry><title>20170419第九週</title><link href="./Week%209.html" rel="alternate"></link><published>2017-04-19T11:00:00+08:00</published><updated>2017-04-19T11:00:00+08:00</updated><author><name>2017springcd_bg8</name></author><id>tag:,2017-04-19:./Week 9.html</id><summary type="html">&lt;h3&gt;四連桿機構協同 Trace Point 查驗&lt;/h3&gt;
 
-&lt;p&gt;參考的網際程式如下:&lt;/p&gt;
-
-&lt;pre class="brush: python"&gt;
 &lt;!-- 導入 Brython 標準程式庫 --&gt;
 
 &lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
@@ -17,9 +14,10 @@ brython(1);
 }
 &lt;/script&gt;
 
- &lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
- &lt;canvas id="fourbar_40423214" width="600" height="400"&gt;&lt;/canvas&gt;
+&lt;h3&gt;40423214: &lt;button onClick="lity('./../40423214/data/midterm1.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423214" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
@@ -59,22 +57,8 @@ ctx.strokeStyle = "blue"
 ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
-&lt;/pre&gt;
 
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-&lt;h3&gt;40423216: &lt;button onClick="lity('./../40423206/data/midterm2.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423216: &lt;button onClick="lity('./../40423216/data/midterm2.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
  &lt;canvas id="fourbar_40423216" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
@@ -118,19 +102,19 @@ ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
 
-&lt;h3&gt;40423207: &lt;button onClick="lity('./../40423207/data/midterm3.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423225: &lt;button onClick="lity('./../40423225/data/midterm3.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
- &lt;canvas id="fourbar_40423207" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+ &lt;canvas id="fourbar_40423225" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423207"]
+canvas = doc["fourbar_40423225"]
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423207/data/midterm3.csv").read()
+fourbar_data = open("./../40423225/data/midterm3.csv").read()
 fourbar_list = fourbar_data.splitlines()
 # 以下可以利用 ctx 物件進行畫圖
 # 先畫一條直線
@@ -162,19 +146,19 @@ ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
 
-&lt;h3&gt;40423219: &lt;button onClick="lity('./../40423219/data/midterm4.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423234: &lt;button onClick="lity('./../40423234/data/midterm4.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
- &lt;canvas id="fourbar_40423219" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+ &lt;canvas id="fourbar_40423234" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423219"]
+canvas = doc["fourbar_40423234"]
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423219/data/midterm4.csv").read()
+fourbar_data = open("./../40423234/data/midterm4.csv").read()
 fourbar_list = fourbar_data.splitlines()
 # 以下可以利用 ctx 物件進行畫圖
 # 先畫一條直線
@@ -206,64 +190,20 @@ ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
 
-&lt;h3&gt;40423226: &lt;button onClick="lity('./../40423226/data/midterm5.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
- &lt;canvas id="fourbar_40423226" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-from browser import html
-import math
-# 準備繪圖畫布
-canvas = doc["fourbar_40423226"]
-ctx = canvas.getContext("2d")
-
-fourbar_data = open("./../40423226/data/midterm5.csv").read()
-fourbar_list = fourbar_data.splitlines()
-# 以下可以利用 ctx 物件進行畫圖
-# 先畫一條直線
-ctx.beginPath()
-# 設定線的寬度為 1 個單位
-ctx.lineWidth = 1
-# 利用 transform 將 y 座標反轉, 且 offset canvas.height
-# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
-# 配合圖形位置進行座標轉換
-ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
-# 畫出 x 與 y 座標線
-# 各座標值放大 3 倍
-ratio = 3
-ctx.moveTo(0, 0)
-ctx.lineTo(-30*ratio, 0)
-start_point = fourbar_list[0].split(",")
-ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
-count = 0
-for data in fourbar_list[1:]:
-    point = data.split(",")
-    #count = count + 1
-    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
-    #container1 &lt;= html.BR()
-    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
-# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
-ctx.strokeStyle = "blue"
-# 實際執行畫線
-ctx.stroke()
-ctx.closePath()
-&lt;/script&gt;
-
-&lt;h3&gt;40423229: &lt;button onClick="lity('./../40423229/data/midterm6.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423242: &lt;button onClick="lity('./../40423242/data/midterm5.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
 
-&lt;p&gt;&lt;canvas id="fourbar_40423229" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;p&gt;&lt;canvas id="fourbar_40423242" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423229"]
+canvas = doc["fourbar_40423242"]
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423229/data/midterm6.csv").read()
+fourbar_data = open("./../40423242/data/midterm5.csv").read()
 fourbar_list = fourbar_data.splitlines()
 # 以下可以利用 ctx 物件進行畫圖
 # 先畫一條直線
@@ -295,20 +235,20 @@ ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
 
-&lt;h3&gt;40423241: &lt;button onClick="lity('./../40423241/data/midterm7.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423244: &lt;button onClick="lity('./../40423244/data/midterm6.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
 
-&lt;p&gt;&lt;canvas id="fourbar_40423241" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;p&gt;&lt;canvas id="fourbar_40423244" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423241"]
+canvas = doc["fourbar_40423244"]
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423241/data/midterm7.csv").read()
+fourbar_data = open("./../40423244/data/midterm6.csv").read()
 fourbar_list = fourbar_data.splitlines()
 # 以下可以利用 ctx 物件進行畫圖
 # 先畫一條直線
@@ -340,19 +280,63 @@ ctx.stroke()
 ctx.closePath()
 &lt;/script&gt;
 
-&lt;h3&gt;40423243: &lt;button onClick="lity('./../40423243/data/midterm8.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+&lt;h3&gt;40423247: &lt;button onClick="lity('./../40423247/data/midterm7.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
- &lt;canvas id="fourbar_40423243" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+ &lt;canvas id="fourbar_40423247" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
 &lt;script type="text/python3"&gt;
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423243"]
+canvas = doc["fourbar_40423247"]
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423243/data/midterm8.csv").read()
+fourbar_data = open("./../40423247/data/midterm7.csv").read()
+fourbar_list = fourbar_data.splitlines()
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線
+ctx.beginPath()
+# 設定線的寬度為 1 個單位
+ctx.lineWidth = 1
+# 利用 transform 將 y 座標反轉, 且 offset canvas.height
+# (X scale, X skew, Y skew, Y scale, X offset, Y offset)
+# 配合圖形位置進行座標轉換
+ctx.transform(1, 0, 0, -1, canvas.width/2+250, canvas.height/2+100)
+# 畫出 x 與 y 座標線
+# 各座標值放大 3 倍
+ratio = 3
+ctx.moveTo(0, 0)
+ctx.lineTo(-30*ratio, 0)
+start_point = fourbar_list[0].split(",")
+ctx.moveTo(float(start_point[0])*ratio, float(start_point[1])*ratio)
+count = 0
+for data in fourbar_list[1:]:
+    point = data.split(",")
+    #count = count + 1
+    #container1 &lt;= str(count) + ":" + point[0] + "," + point[1]
+    #container1 &lt;= html.BR()
+    ctx.lineTo(float(point[0])*ratio, float(point[1])*ratio)
+# 設定顏色為藍色, 也可以使用 "rgb(0, 0, 255)" 字串設定顏色值
+ctx.strokeStyle = "blue"
+# 實際執行畫線
+ctx.stroke()
+ctx.closePath()
+&lt;/script&gt;
+
+&lt;h3&gt;40423249: &lt;button onClick="lity('./../40423249/data/midterm8.png')"&gt;&lt;span class="glyphicon glyphicon-picture"&gt;&lt;/span&gt; 尺寸圖&lt;/button&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;!-- 以下實際利用  Brython 畫四連桿 trace point 路徑--&gt;
+ &lt;canvas id="fourbar_40423249" width="600" height="400"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar_40423249"]
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../40423249/data/midterm8.csv").read()
 fourbar_list = fourbar_data.splitlines()
 # 以下可以利用 ctx 物件進行畫圖
 # 先畫一條直線
