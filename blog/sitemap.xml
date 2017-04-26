@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2017-04-27T02:12:43-00:00</lastmod>
+<lastmod>2017-04-27T02:28:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2017-04-27T02:12:43-00:00</lastmod>
+<lastmod>2017-04-27T02:28:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2017-04-27T02:12:43-00:00</lastmod>
+<lastmod>2017-04-27T02:28:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2017-04-27T02:12:43-00:00</lastmod>
+<lastmod>2017-04-27T02:28:46-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -109,29 +109,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/v-rep-mo-ni-oneba.html</loc>
-<lastmod>2017-03-29T11:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/fossil-scm-yu-stunnel-qi-dong-zheng-he-gen-xian-shi-zuo-ye-he-zai-v-rep-mo-ni-fourbar.html</loc>
-<lastmod>2017-03-22T11:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/w2.html</loc>
-<lastmod>2017-03-01T11:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/w3.html</loc>
-<lastmod>2017-03-08T11:00:00+08:06</lastmod>
+<loc>./tag/fossil-tui-song-dang-an-he-solvespacewan-cheng-ba-lian-gan-ji-gou-gen-yong-v-repmo-ni.html</loc>
+<lastmod>2017-04-05T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -139,13 +118,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./tag/zi-ping.html</loc>
 <lastmod>2017-04-12T11:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>./tag/fossil-tui-song-dang-an-he-solvespacewan-cheng-ba-lian-gan-ji-gou-gen-yong-v-repmo-ni.html</loc>
-<lastmod>2017-04-05T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -165,8 +137,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./tag/w3.html</loc>
+<lastmod>2017-03-08T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/brython.html</loc>
+<lastmod>2017-03-08T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/v-rep-mo-ni-oneba.html</loc>
+<lastmod>2017-03-29T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./tag/solvespace.html</loc>
 <lastmod>2017-03-15T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./tag/fossil-scm-yu-stunnel-qi-dong-zheng-he-gen-xian-shi-zuo-ye-he-zai-v-rep-mo-ni-fourbar.html</loc>
+<lastmod>2017-03-22T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -179,8 +179,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>./tag/brython.html</loc>
-<lastmod>2017-03-08T11:00:00+08:06</lastmod>
+<loc>./tag/w2.html</loc>
+<lastmod>2017-03-01T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
