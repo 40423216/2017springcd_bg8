@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>python - 2017Spring 協同產品設計實習 (2017 springcd_bg8)</title>
+    <title>w9 - 2017Spring 協同產品設計實習 (2017 springcd_bg8)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -168,7 +168,7 @@ init_mathjax();
 
 
     <meta name="author" content="KMOL" />
-    <meta name="keywords" content="python" />
+    <meta name="keywords" content="w9" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="2017Spring 協同產品設計實習 (2017 springcd_bg8)" />
@@ -279,11 +279,47 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="../Week 4.html">20170315第四週</a></h2>
-                <div class="summary"><p>w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
-w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
-W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連桿。轉動連桿確認作動是否會干涉 2.在繪製出零件並俟連桿機構做組合。</p>
-                    <a class="btn btn-default btn-xs" href="../Week 4.html">more ...</a>
+                <h2><a href="../Week 9.html">期中報告 ( 20170419 Week 9 )</a></h2>
+                <div class="summary"><h3>第九周期中報告</h3>
+
+<iframe src="https://player.vimeo.com/video/214771841" width="640" height="693" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/214771841">2017-04-26_09-41-12</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
+
+<canvas id="fourbar" width="600" height="400"></canvas>
+
+<div id="container1"></div>
+
+<script type="text/python3">
+from browser import document as doc
+from browser import html
+import math
+# 準備繪圖畫布
+canvas = doc["fourbar"]
+container1 = doc['container1']
+ctx = canvas.getContext("2d")
+
+fourbar_data = open("./../data/midterm2.csv").read()
+fourbar_list = fourbar_data.splitlines()
+#container1 <= fourbar_list[0]
+# 以下可以利用 ctx 物件進行畫圖
+# 先畫一條直線 ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="../Week 9.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -298,8 +334,8 @@ W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="../Week 4.html">
-                            20170315第四週
+                        <a href="../Week 9.html">
+                            期中報告 ( 20170419 Week 9 )
                         </a>
                     </li>
                 </ul>

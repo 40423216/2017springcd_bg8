@@ -278,8 +278,12 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="./Week 9.html">20170419第九週</a></h2>
-                <div class="summary"><h3>四連桿機構協同 Trace Point 查驗</h3>
+                <h2><a href="./Week 9.html">期中報告 ( 20170419 Week 9 )</a></h2>
+                <div class="summary"><h3>第九周期中報告</h3>
+
+<iframe src="https://player.vimeo.com/video/214771841" width="640" height="693" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/214771841">2017-04-26_09-41-12</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <!-- 導入 Brython 標準程式庫 -->
 
@@ -294,33 +298,33 @@ brython(1);
 }
 </script>
 
-<h3>40423214: <button onClick="lity('./../40423214/data/midterm1.png')"><span class="glyphicon glyphicon-picture"></span> 尺寸圖</button></h3>
+<!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
 
-<p><!-- 以下實際利用  Brython 畫四連桿 trace point 路徑-->
- <canvas id="fourbar_40423214" width="600" height="400"></canvas></p>
+<canvas id="fourbar" width="600" height="400"></canvas>
+
+<div id="container1"></div>
+
 <script type="text/python3">
 from browser import document as doc
 from browser import html
 import math
 # 準備繪圖畫布
-canvas = doc["fourbar_40423214"]
+canvas = doc["fourbar"]
+container1 = doc['container1']
 ctx = canvas.getContext("2d")
 
-fourbar_data = open("./../40423214/data/midterm1.csv").read()
+fourbar_data = open("./../data/midterm2.csv").read()
 fourbar_list = fourbar_data.splitlines()
+#container1 <= fourbar_list[0]
 # 以下可以利用 ctx 物件進行畫圖
-# 先畫一條直線
-ctx.beginPath()
-# 設定線的寬度為 1 個單位 ...</script></!--></!-->
+# 先畫一條直線 ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="./Week 9.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="./Week 8.html">20170412第八週</a></h2>
-                <div class="summary"><h3>自評</h3>
-
-<p>小組互評: <a href="https://pygroup-ag100.rhcloud.com">https://pygroup-ag100.rhcloud.com</a></p>
+                <h2><a href="./Week 8.html">期中自評成績 ( 20170412 Week 8 )</a></h2>
+                <div class="summary"><p>小組互評: <a href="https://pygroup-ag100.rhcloud.com">https://pygroup-ag100.rhcloud.com</a></p>
 
 <p>個人自評: <a href="http://mde1a2.kmol.info:8000/k96tgzh1ofbl">http://mde1a2.kmol.info:8000/k96tgzh1ofbl</a></p>
                     <a class="btn btn-default btn-xs" href="./Week 8.html">more ...</a>
@@ -328,94 +332,70 @@ ctx.beginPath()
             </article>
             <hr/>
             <article>
-                <h2><a href="./Week 7.html">20170405第七週</a></h2>
-                <div class="summary"><h3>Fossil 推送檔案和V-rep模擬八連桿機構</h3>
+                <h2><a href="./Week 7.html">Fossil 推送檔案 / V-rep 模擬八連桿機構 ( 20170405 Week 7 )</a></h2>
+                <div class="summary"><h3>Fossil 推送檔案</h3>
+
+<iframe src="https://player.vimeo.com/video/212856271" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/212856271">2017-04-12_11-41-03</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <h3>Fossil 推送檔案</h3>
+
+<p>1. 在 fossil_repo 的目錄 clone 區網的 fossil 檔</p>
+
+<p><img src="../data/fossil clone.png" width="800" />
+
+<p>2. 會發現多一個 bg8.fossil 的檔案</p>
+
+<p>3. 新建一個 wd 的目錄, 並且進去 wd 目錄</p>
 
 <pre>
 mkdir wd
 cd wd</pre>
 
+<p>4. 再新建一個 w7 的目錄, 並且進去 w7 目錄</p>
+
 <pre>
 mkdir w7
 cd w7</pre>
 
-<pre>fossil open ./../../bg8.fossil</pre>
+<p><img src="../data/cd w7.png" width="800" />
 
-<pre>
-fossil add .
-fossil remote-url off
-fossil commit -m "提交的註解"
-fossil push https://user@10.0.0.130 </pre>
-
-<h3>Solvespace</h3>
-
-<p>組合</p>
-
-<iframe src="../data/image/W7-1.html" width="800" height="480"></iframe>
-
-<p>bracket_lower</p>
-
-<iframe src="../data/image/W7-2.html" width="800" height="480"></iframe>
-
-<p>link_15</p>
-
-<iframe src="../data/image/W7-3.html" width="800" height="480"></iframe>
-
-<p>link_39.3</p>
-
-<iframe src="../data/image/W7-4.html" width="800" height="480"></iframe>
-
-<p>link_39.4</p>
-
-<iframe src="../data/image/W7-5.html" width="800" height="480"></iframe>
-
-<p>link_50</p>
-
-<iframe src="../data/image/W7-6.html" width="800" height="480"></iframe>
-
-<p>link_62</p>
-
-<iframe src="../data/image/W7-7.html" width="800" height="480"></iframe>
-
-<p>link_fixed</p>
-
-<iframe src="../data/image/W7-8.html" width="800" height="480"></iframe>
-
-<p>Pin_10</p>
-
-<iframe src="../data/image/W7-9.html" width="800" height="480"></iframe>
-
-<p>Pin_15</p>
-
-<iframe src="../data/image/W7-10.html" width="800" height="480"></iframe>
-
-<p>triangle_upper</p>
-
-<iframe src="../data/image/W7-11.html" width="800" height="480"></iframe>
-
-<h3>影片</h3>
-
-<iframe src="https://player.vimeo.com/video/214529063" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>5. 用相對位置打開 bg8.fossil </p>
+<pre>fossil open ...</pre></p></p>
                     <a class="btn btn-default btn-xs" href="./Week 7.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="./Week 6.html">20170329第六週</a></h2>
-                <div class="summary"><h3>V-rep 模擬 Onebar</h3>
+                <h2><a href="./Week 6.html">V-rep 模擬四連桿機構 ( 20170329 Week 6 )</a></h2>
+                <div class="summary"><h3>Fourbar 安裝 base</h3>
 
-<h3>影片</h3>
+<iframe src="https://player.vimeo.com/video/213078809" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<iframe src="https://player.vimeo.com/video/214401019" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/213078809">2017-04-12_20-45-53</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<h3>Fourbar 運動模擬</h3>
+
+<iframe src="https://player.vimeo.com/video/213647515" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/213647515">2017-04-18_18-07-31</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<p>在 V-rep 模擬 Fourbar</p>
+
+<h3>解決倉儲推送出現問題</h3>
+
+<p>解決的辦法, 一樣刪除 plugin 下的 liquid_tags 目錄</p>
                     <a class="btn btn-default btn-xs" href="./Week 6.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="./Week 5.html">20170322第五週</a></h2>
-                <div class="summary"><h3>Fossil SCM 與 Stunnel 啟動整合跟顯示作業和在 V-rep 模擬 Fourbar</h3>
+                <h2><a href="./Week 5.html">更新 start.bat 啟動內容 ( 20170322 Week 5 )</a></h2>
+                <div class="summary"><h1>單連桿(SolveSpace轉V-rep)</h1>
+<iframe src="https://player.vimeo.com/video/211480751" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/211480751">2017-04-04_20-47-35</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 <h3>Fossil SCM 與 Stunnel 啟動整合</h3>
 
@@ -428,16 +408,22 @@ REM 近端使用 fossil 管理資料版本, 並且定時轉為 git 格式後上�
 REM 設定 y 硬碟代號與 data 目錄對應
 set Disk=y
 subst %Disk%: "data"
-REM 設定 leo ...</pre>
+REM 設定 leo 相關對應 ...</pre>
                     <a class="btn btn-default btn-xs" href="./Week 5.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="./Week 4.html">20170315第四週</a></h2>
-                <div class="summary"><p>w1 先到課程網誌下載 tiny2017 1GB大小的可攜式程式。 
-w2 1.開啟 star，利用 ipconfig /all指令找出自己電腦的IP。 2.把 stunnel.conf拉到SciTE，更改IP，允許防火牆。 
-W3 1.依照老師上課所繪製的四連趕機構，分別為30、50、60的連桿。轉動連桿確認作動是否會干涉 2.在繪製出零件並俟連桿機構做組合。</p>
+                <h2><a href="./Week 4.html">各組協同主機 / 單連桿機構 ( 20170315 Week 4 )</a></h2>
+                <div class="summary"><h3>建立各組協同主機</h3>
+
+<p>2017springcd_bg8: <a href="https://mde2a2.kmol.info/cdbg8">https://mde2a2.kmol.info/cdbg8</a></p>
+
+<h3>單連桿阻立</h3>
+
+<iframe src="https://player.vimeo.com/video/210424040" width="640" height="347" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/210424040">2017-03-28_20-36-43</a> from <a href="https://vimeo.com/user47853073">李彥錞</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                     <a class="btn btn-default btn-xs" href="./Week 4.html">more ...</a>
                 </div>
             </article>
@@ -501,27 +487,27 @@ n ...</pre>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
                         <a href="./Week 9.html">
-                            20170419第九週
+                            期中報告 ( 20170419 Week 9 )
                         </a>
                     </li>
                     <li class="list-group-item">
                         <a href="./Week 8.html">
-                            20170412第八週
+                            期中自評成績 ( 20170412 Week 8 )
                         </a>
                     </li>
                     <li class="list-group-item">
                         <a href="./Week 7.html">
-                            20170405第七週
+                            Fossil 推送檔案 / V-rep 模擬八連桿機構 ( 20170405 Week 7 )
                         </a>
                     </li>
                     <li class="list-group-item">
                         <a href="./Week 6.html">
-                            20170329第六週
+                            V-rep 模擬四連桿機構 ( 20170329 Week 6 )
                         </a>
                     </li>
                     <li class="list-group-item">
                         <a href="./Week 5.html">
-                            20170322第五週
+                            更新 start.bat 啟動內容 ( 20170322 Week 5 )
                         </a>
                     </li>
                 </ul>
